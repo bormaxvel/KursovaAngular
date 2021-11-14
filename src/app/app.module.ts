@@ -7,6 +7,8 @@ import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { MenuLabComponent } from './menu-lab/menu-lab.component';
 import { MenuMainComponent } from './menu-main/menu-main.component';
+import { SideBarComponent } from './labs/side-bar/side-bar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes = [
@@ -21,6 +23,8 @@ const routes = [
     LabsComponent,
     MenuLabComponent,
     MenuMainComponent,
+    SideBarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

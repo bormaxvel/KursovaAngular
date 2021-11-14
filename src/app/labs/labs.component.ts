@@ -10,6 +10,6 @@ export class LabsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
-
 }

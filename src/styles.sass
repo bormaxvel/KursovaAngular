@@ -66,12 +66,27 @@ a
 
 @keyframes DiorganyiNadpys
     0%
-        transform: rotate(-10deg) translate(20%, -50px)
-    50%
-        transform: translate(0, -100px)
-    100%
-        transform: rotate(10deg) translate(-20%, -50px)
+    transform: scale3d(1, 1, 1)
 
+    30%
+        transform: scale3d(1.25, 0.75, 1)
+
+    40%
+        transform: scale3d(0.75, 1.25, 1)
+
+    50%
+        transform: scale3d(1.15, 0.85, 1)
+
+    65%
+        transform: scale3d(0.95, 1.05, 1)
+
+    75%
+        transform: scale3d(1.05, 0.95, 1)
+
+    100%
+        transform: scale3d(1, 1, 1)
+
+    
 @keyframes VybirLaby
     0%
         transform: translate(5%, 70px)
@@ -171,10 +186,11 @@ footer
     padding: 100px 5% 100px 5%
     //border: dashed 1px #00000050
 
-html, body, #first  //щоб перший блок був на весь екран
+html, body  //щоб перший блок був на весь екран
     height: 100%
 
 #first
+    height: 80%
     
     background-image: url("/assets/img/mainb.jpg") 
     //    background-attachment: fixed
@@ -187,8 +203,7 @@ html, body, #first  //щоб перший блок був на весь екра
         color: $white
         animation-name: DiorganyiNadpys
         animation-duration: 1.5s
-        animation-iteration-count: infinite
-        animation-direction: alternate
+        // animation-iteration-count: infinite
     display: flex
     justify-content: center
     align-items: center
@@ -301,6 +316,7 @@ input:checked
 .labpagebody
     display: flex
     flex-direction: column
+    height: 100%
 .labnotfooter
     flex: 1 0 auto
 footer //футер прижати донизу
