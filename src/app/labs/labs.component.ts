@@ -12,6 +12,10 @@ export class LabsComponent implements OnInit {
   constructor(private service:MainLogicService) { }
   labaList: Laba[]=[];
   ngOnInit(): void {
-    this.labaList = this.service.getLaba();
+    this.service.getLaba().subscribe(
+    (labs)=>{
+      this.labaList = labs;
+    }
+    );
   }
 }
