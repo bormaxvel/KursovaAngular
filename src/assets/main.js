@@ -29,7 +29,7 @@ window.addEventListener('click', function(event){
 
 // FETCH
 
-    const URL= "labs.json";
+    const URL= "/assets/labs.json";
     let res;
     fetch(URL)
     .then(response=> response.json())
@@ -44,7 +44,7 @@ window.addEventListener('click', function(event){
       const vstavka = (response) =>{
         
         var mozhna = ""; //Just zminna z tekstom
-        console.log(mozhna_sche_zdaty); // array[] de 1 - labs, yaki mozhna zdaty
+        console.log(mozhna_sche_zdaty); // array[] de 1 - /assets/, yaki mozhna zdaty
         //console.log(a);
         if (mozhna_sche_zdaty[a] == 0){ //Tak mozhna chy Ni ???? (vypadok NO)
           mozhna = "Час роботи вийшов";
@@ -120,7 +120,7 @@ let nearest_deadline = 0 // var with the nearest deadline
 let ii = 0 //Its number (ID in a JSON)
 
 // FETCH
-const URL= "labs.json";
+const URL= "/assets/labs.json";
 let res2;
 fetch(URL)
 .then(response=> response.json())
