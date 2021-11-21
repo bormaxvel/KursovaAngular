@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LabsComponent } from './labs/labs.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { MenuLabComponent } from './menu-lab/menu-lab.component';
 import { MenuMainComponent } from './menu-main/menu-main.component';
 import { SideBarComponent } from './labs/side-bar/side-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 const routes = [
@@ -30,6 +32,8 @@ const routes = [
     BrowserModule,
     RouterModule,
     RouterModule.forRoot(routes),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

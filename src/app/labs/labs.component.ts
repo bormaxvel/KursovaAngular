@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Laba } from '../interfaces/laba';
+import { MainLogicService } from '../services/main-logic.service';
 
 @Component({
   selector: 'app-labs',
@@ -7,9 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LabsComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private service:MainLogicService) { }
+  labaList: Laba[]=[];
   ngOnInit(): void {
-    
+    this.labaList = this.service.getLaba();
   }
 }
