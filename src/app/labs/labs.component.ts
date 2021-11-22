@@ -28,6 +28,17 @@ export class LabsComponent implements OnInit {
 
   private VstavkaHTML(data: number): void {
     //console.log(data);
+
+    //Czhy mozhna zdaty
+    var mozhna: string = "";
+    if(new Date(this.labaList[data].time) > new Date()){
+      mozhna = "Ще можна здати";
+    }
+    else{
+      mozhna = "Час роботи вийшов";
+    }
+    //
+
     this.vstavkaTest = `
         
         <div class="block2 dell" id="labscontent">
@@ -36,7 +47,7 @@ export class LabsComponent implements OnInit {
                 <h1>${this.labaList[data].name}</h1>
             </div>
             <div class="flexel2" id="labstatus">
-                <h1>MOZHNA</h1>
+                <h1>${mozhna}</h1>
             </div>
             <div class="flexel2" id="labdeadline">
                 <h1>${this.labaList[data].to_time}</h1>
