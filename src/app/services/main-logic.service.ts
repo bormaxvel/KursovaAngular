@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { Laba } from '../interfaces/laba';
 
 @Injectable({
@@ -16,5 +16,9 @@ export class MainLogicService {
   getLaba():Observable<Laba[]>{
     return this.http.get<Laba[]>(this.url);
   }
+  public count$ = new Subject<number>();
 
+	public changeCount(count: number) {
+  	this.count$.next(count); 
+  }
 }

@@ -10,12 +10,18 @@ import { MainLogicService } from '../services/main-logic.service';
 export class LabsComponent implements OnInit {
 
   constructor(private service:MainLogicService) { }
+
+
   labaList: Laba[]=[];
   ngOnInit(): void {
+    this.service.count$.subscribe((count) => this.log(count));
     this.service.getLaba().subscribe(
     (labs)=>{
       this.labaList = labs;
     }
     );
+  }
+  private log(data: number): void {
+    console.log(data);
   }
 }
