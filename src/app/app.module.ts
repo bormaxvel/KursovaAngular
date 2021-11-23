@@ -11,6 +11,8 @@ import { MenuMainComponent } from './menu-main/menu-main.component';
 import { SideBarComponent } from './labs/side-bar/side-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ActiveLabComponent } from './labs/active-lab/active-lab.component';
+import { AnimationComponent } from './labs/animation/animation.component';
 
 
 const routes = [
@@ -27,6 +29,8 @@ const routes = [
     MenuMainComponent,
     SideBarComponent,
     FooterComponent,
+    ActiveLabComponent,
+    AnimationComponent,
   ],
   imports: [
     BrowserModule,
