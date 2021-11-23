@@ -1,8 +1,8 @@
 <div class="container2" id="sidebar">
     <div class="block2" id="labslist">
         <h1 class="flexel">Список лаб</h1>
-        <div class="coolbtn" (click) = changeNumberOfCurrentLab(0)> <input type="checkbox" name="donelab2" value="donelab1">1 Лаба</div>
-        <div class="coolbtn" (click) = changeNumberOfCurrentLab(1)> <input type="checkbox" name="donelab2" value="donelab1">2 Лаба</div>
+        <a routerLink = "/labs/actlab" (click) = changeNumberOfCurrentLab(0)><div class="coolbtn"  routerLink = "labs/actlab"> <input type="checkbox" name="donelab2" value="donelab1">1 Лаба</div></a>
+        <a routerLink = "/labs/actlab" (click) = changeNumberOfCurrentLab(1)><div class="coolbtn" > <input type="checkbox" name="donelab2" value="donelab1">2 Лаба</div></a>
         <div class="coolbtn" (click) = changeNumberOfCurrentLab(2)> <input type="checkbox" name="donelab2" value="donelab1">3 Лаба</div>
         <div class="coolbtn" (click) = changeNumberOfCurrentLab(3)> <input type="checkbox" name="donelab2" value="donelab1">4 Лаба</div>
         <div class="coolbtn" (click) = changeNumberOfCurrentLab(4)> <input type="checkbox" name="donelab2" value="donelab1">5 Лаба</div>

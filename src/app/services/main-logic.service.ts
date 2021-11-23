@@ -21,4 +21,5 @@ export class MainLogicService {
 	public changeCount(count: number) {
   	this.count$.next(count); 
   }
+
 }

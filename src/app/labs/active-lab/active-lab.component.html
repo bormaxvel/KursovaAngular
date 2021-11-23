@@ -1,1 +1,49 @@
-<p>active-lab works!</p>
+
+<div class="block2 dell" id="labscontent">
+    <div class="flexel" id="names">
+        <div class="flexel2" id="labname">
+            <h1>{{labaList[dataNumberVstavkaID].name}}</h1>
+        </div>
+        <div class="flexel2" id="labstatus">
+            <h1>{{mozhna}}</h1>
+        </div>
+        <div class="flexel2" id="labdeadline">
+            <h1>{{labaList[dataNumberVstavkaID].to_time}}</h1>
+        </div>
+    </div>
+    <div class="differ smalldiffer"></div>
+    <div class="labbody">
+        <div class="flexel" id=labinfo>
+            <h2>Опис роботи:</h2>
+            {{labaList[dataNumberVstavkaID].info}}
+            <ol>
+              <li>{{labaList[dataNumberVstavkaID].info_steps[0]}}</li>
+              <li>{{labaList[dataNumberVstavkaID].info_steps[1]}}</li>
+              <li>{{labaList[dataNumberVstavkaID].info_steps[2]}}</li>
+              <li>{{labaList[dataNumberVstavkaID].info_steps[3]}}</li>
+              <li>{{labaList[dataNumberVstavkaID].info_steps[4]}}</li>
+            </ol>
+        </div>
+        <div class="" id="labinteract">
+            <div class="insidelabinteract insidelabinteracttop">
+                <div class="flexellabint" id="labdownload">
+                <a href="{{labaList[dataNumberVstavkaID].download_link}}" target="_blank"><button class="downloadbutton"><img class="downloadimg" src="/assets/img/download.png">Download</button></a>
+                </div>
+                <div class="flexellabint" id="labyoutube">
+                    <iframe class="labvideo" src="{{this.labaList[dataNumberVstavkaID].video_link}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="insidelabinteract">
+                <div class="flexellabint" id="labgit">
+                    <a href="{{labaList[dataNumberVstavkaID].git_link}}" target="_blank"><img class="labGitHub" src="/assets/img/GitHub.png"></a>
+                </div>
+                <div class="flexellabint" id="labscreen">
+                    <img class="labscreenimg" src="{{labaList[dataNumberVstavkaID].photo_link}}">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</div>`

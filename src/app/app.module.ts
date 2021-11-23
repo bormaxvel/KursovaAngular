@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { LabsComponent } from './labs/labs.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { MenuLabComponent } from './menu-lab/menu-lab.component';
@@ -15,9 +15,13 @@ import { ActiveLabComponent } from './labs/active-lab/active-lab.component';
 import { AnimationComponent } from './labs/animation/animation.component';
 
 
-const routes = [
+const route: Routes = [
   {path: '', component: MainComponent},
-  {path: 'labs', component: LabsComponent}
+  {path: 'labs', component: LabsComponent,
+children:[
+  {path: '', component: AnimationComponent},
+  {path: 'actlab', component: ActiveLabComponent}
+]}
 ]
 
 @NgModule({
@@ -35,7 +39,7 @@ const routes = [
   imports: [
     BrowserModule,
     RouterModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(route),
     HttpClientModule,
     FormsModule
   ],
