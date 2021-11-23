@@ -89,9 +89,9 @@ a
     
 @keyframes VybirLaby
     0%
-        transform: translate(5%, 70px)
+        transform: translate(20%, 70px)
     100%
-        transform: translate(-15%, 70px)
+        transform: translate(-10%, 70px)
 
 @keyframes heartBeat
   0%
@@ -357,11 +357,14 @@ footer //футер прижати донизу
         padding: 3px
 
     .vybirLaby
+        display: flex
+        justify-content: center
+        max-width: 900px
         font-size: 4vw
         text-align: center
         color: #6d83da7a
         animation-name: VybirLaby
-        animation-duration: 1s
+        animation-duration: 1.3s
         animation-iteration-count: infinite
         animation-direction: alternate 
     .vybirLaby:before
@@ -370,6 +373,7 @@ footer //футер прижати донизу
     display: flex
     justify-content: space-between
     #sidebar
+        z-index: 5
         border: dashed 1px $liteblue
         border-radius: 15px
         margin-left: 10px
