@@ -93,6 +93,26 @@ a
     100%
         transform: translate(-15%, 70px)
 
+@keyframes heartBeat
+  0%
+    transform: scale(1)
+
+  14%
+    transform: scale(0.9)
+
+  28%
+    transform: rotate(-10deg)
+
+  42%
+    transform: rotate(10deg)
+
+  70%
+    transform: scale(1)
+
+
+  
+
+    
 header
     min-width: 560px
     position: fixed
@@ -250,6 +270,7 @@ html, body  //щоб перший блок був на весь екран
     display: flex
     padding: 5px
     justify-content: space-between
+    align-items: center
     flex-wrap: wrap
 .Teacher
     justify-content: center
@@ -426,6 +447,14 @@ footer //футер прижати донизу
 
 .labvideo
     max-width: 250px
+    #imgYT
+        object-fit: contain
+        max-width: 250px
+        &:hover
+            
+            animation-name: heartBeat
+            animation-duration: 1s
+            animation-timing-function: ease-in-out
 
 .labGitHub
     height: 120px

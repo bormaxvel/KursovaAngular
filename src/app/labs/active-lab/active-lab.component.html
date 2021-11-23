@@ -31,7 +31,7 @@
                 <a href="{{labaList[dataNumberVstavkaID].download_link}}" target="_blank"><button class="downloadbutton"><img class="downloadimg" src="/assets/img/download.png">Download</button></a>
                 </div>
                 <div class="flexellabint" id="labyoutube">
-                    <iframe class="labvideo" src="{{this.labaList[dataNumberVstavkaID].video_link}" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <a class="labvideo" href={{this.labaList[dataNumberVstavkaID].video_link}} target="_blank"><img id="imgYT" src="/assets/img/youtube.png" alt="Youtube"></a>
                 </div>
             </div>
             <div class="insidelabinteract">

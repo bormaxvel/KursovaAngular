@@ -6,6 +6,8 @@ import { MainLogicService } from 'src/app/services/main-logic.service';
   templateUrl: './side-bar.component.html',
   styleUrls: ['./side-bar.component.sass']
 })
+
+
 export class SideBarComponent implements OnInit {
 
   constructor(private readonly simpleService: MainLogicService) {}
@@ -15,6 +17,13 @@ export class SideBarComponent implements OnInit {
 
 
   }
+
+
+  // selected_chart(input: HTMLInputElement) {
+  //   input.checked === true
+  //     ? console.log('true')
+  //     : console.log('false');
+  // }
 
   ngOnInit(): void {
   }
