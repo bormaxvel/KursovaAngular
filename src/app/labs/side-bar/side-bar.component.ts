@@ -12,6 +12,7 @@ export class SideBarComponent implements OnInit {
 
   public changeNumberOfCurrentLab(n:number): void {
     this.simpleService.changeCount(n);
+    
   }
 
   ngOnInit(): void {
