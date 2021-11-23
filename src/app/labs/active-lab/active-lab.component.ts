@@ -13,7 +13,6 @@ export class ActiveLabComponent implements OnInit {
   constructor(private service:MainLogicService) { 
     //dataNumberVstavkaID: this.service.getNumber();
   }
-
   labaList: Laba[]=[];
   ngOnInit(): void {
     this.service.count$.subscribe((count) => this.VstavkaHTML(count));
@@ -23,8 +22,7 @@ export class ActiveLabComponent implements OnInit {
     }
     );
   }
-
-  dataNumberVstavkaID=0;
+  dataNumberVstavkaID:number = 0;
   mozhna="";
   private VstavkaHTML(data: number): void{
     this.dataNumberVstavkaID=data;
