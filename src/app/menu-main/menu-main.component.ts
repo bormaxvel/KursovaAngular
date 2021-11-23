@@ -26,16 +26,12 @@ export class MenuMainComponent implements OnInit {
   
   labaList: Laba[]=[];
   ngOnInit(): void {
-    this.service.count$.subscribe((count) => this.getList());
+    this.service.count$.subscribe((count) => this.VstavkaDeadline());
     this.service.getLaba().subscribe(
     (labs)=>{
       this.labaList = labs;
     }
     );
-  }
-
-  private getList(){
-
   }
 
   // Vstavyty Deadline
