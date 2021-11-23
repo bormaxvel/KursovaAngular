@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'LabSite';
-
+  router: any;
+  
   constructor () {
     
   }
