@@ -16,10 +16,17 @@ export class MainLogicService {
   getLaba():Observable<Laba[]>{
     return this.http.get<Laba[]>(this.url);
   }
+  //public count$ = new Subject<number>();
+  //public count$: number;
+
+  public ID$:number = 0;
+
   public count$ = new Subject<number>();
 
+
 	public changeCount(count: number) {
-  	this.count$.next(count); 
+  	this.ID$ = count; 
+    this.count$.next(count); 
   }
 
 }

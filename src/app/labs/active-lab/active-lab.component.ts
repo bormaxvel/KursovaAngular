@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Subject } from 'rxjs';
 import { Laba } from 'src/app/interfaces/laba';
 import { MainLogicService } from 'src/app/services/main-logic.service';
 
@@ -22,7 +23,8 @@ export class ActiveLabComponent implements OnInit {
     }
     );
   }
-  dataNumberVstavkaID:number = 0;
+  dataNumberVstavkaID:number = this.service.ID$;
+
   mozhna="";
   private VstavkaHTML(data: number): void{
     this.dataNumberVstavkaID=data;
