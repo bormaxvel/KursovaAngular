@@ -23,10 +23,25 @@ export class MainLogicService {
 
   public count$ = new Subject<number>();
 
+  public mozhna_service$ = "";
 
 	public changeCount(count: number) {
   	this.ID$ = count; 
-    this.count$.next(count); 
+    this.count$.next(count);
   }
+
+  // public mozhnaZdaty(data: number, labaList$: any): string{
+  //   //Czhy mozhna zdaty
+  //   console.log(labaList$);
+  //   if(new Date(labaList$[data].time) > new Date()){
+  //     console.log("+");
+  //     return("Ще можна здати");
+  //   }
+  //   else{
+  //     console.log("-");
+  //     return("Час роботи вийшов");
+  //   }
+  
+  // }
 
 }

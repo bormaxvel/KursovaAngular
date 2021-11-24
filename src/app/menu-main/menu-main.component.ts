@@ -26,6 +26,10 @@ export class MenuMainComponent implements OnInit {
   
   labaList: Laba[]=[];
   ngOnInit(): void {
+    this.ToSubscribe();
+  }
+
+  public ToSubscribe() : void {
     this.service.count$.subscribe((count) => this.VstavkaDeadline());
     this.service.getLaba().subscribe(
     (labs)=>{
@@ -36,8 +40,8 @@ export class MenuMainComponent implements OnInit {
 
   // Vstavyty Deadline
   mozhna_zdaty = [0, 0, 0, 0, 0];
-  nearest_deadline: any;
-  ii: any;
+  nearest_deadline: Date = new Date(2022, 11, 30);
+  ii: number = 5;
   private VstavkaDeadline(){
     for (var i = 0; i < this.labaList.length; i++){
       if(new Date(this.labaList[i].time) > new Date()){
@@ -46,7 +50,7 @@ export class MenuMainComponent implements OnInit {
           this.nearest_deadline = this.labaList[i].time;
           this.ii = i;
         }
-        else if(new Date(this.nearest_deadline.time) > new Date(this.labaList[i].time)){
+        else if(new Date(this.nearest_deadline) > new Date(this.labaList[i].time)){
           this.nearest_deadline = this.labaList[i].time;
           this.ii = i;
         }
