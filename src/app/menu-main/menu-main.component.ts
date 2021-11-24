@@ -22,6 +22,7 @@ export class MenuMainComponent implements OnInit {
       this.ifactive2 = "bactive";
       this.ifactive1 = "";
     }
+    
   }
   
   labaList: Laba[]=[];
@@ -35,24 +36,19 @@ export class MenuMainComponent implements OnInit {
   }
 
   // Vstavyty Deadline
-  mozhna_zdaty = [0, 0, 0, 0, 0];
-  nearest_deadline: any;
-  ii: any;
-  private VstavkaDeadline(){
+  
+  // mozhna_zdaty = [0, 0, 0, 0, 0];
+  public ii$:number = 0;
+  public nearest_deadline: any = "";
+
+  public VstavkaDeadline(){
     for (var i = 0; i < this.labaList.length; i++){
       if(new Date(this.labaList[i].time) > new Date()){
-        this.mozhna_zdaty[i] = 1;
-        if(i == 0){
-          this.nearest_deadline = this.labaList[i].time;
-          this.ii = i;
-        }
-        else if(new Date(this.nearest_deadline.time) > new Date(this.labaList[i].time)){
-          this.nearest_deadline = this.labaList[i].time;
-          this.ii = i;
-        }
+        this.nearest_deadline = this.labaList[i].time;
+        this.ii$ = i + 1;
+        break
       } 
     }
-    console.log(this.mozhna_zdaty);
     console.log(this.nearest_deadline);
   } 
   //next_laba.innerHTML = `<h2> Наступна лабораторна №${ii + 1} до ${nearest_deadline} </h2>`;
