@@ -38,15 +38,15 @@ export class MenuMainComponent implements OnInit {
   // Vstavyty Deadline
   
   // mozhna_zdaty = [0, 0, 0, 0, 0];
-  public ii$:number = 0;
-  public nearest_deadline: any = "";
+  public ii$:number = 5;
+  public nearest_deadline: Date = new Date(2022, 11, 30);
 
   public VstavkaDeadline(){
     for (var i = 0; i < this.labaList.length; i++){
       if(new Date(this.labaList[i].time) > new Date()){
         this.nearest_deadline = this.labaList[i].time;
         this.ii$ = i + 1;
-        break
+        break;
       } 
     }
     console.log(this.nearest_deadline);
