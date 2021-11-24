@@ -8,4 +8,5 @@ export interface Laba {
     git_link: string;
     photo_link: string;
     time: Date;
+    status: string;
 }

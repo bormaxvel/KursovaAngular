@@ -10,7 +10,8 @@
         "video_link": "https://www.youtube.com/embed/9WjXGsymT5M",
         "git_link": "https://github.com/RomanMykolaichuk/wd2021/tree/LectionFetchAPI",
         "photo_link": "/assets/img/lab1.png",
-        "time": "2001, 1, 1"
+        "time": "2001, 1, 1",
+        "status": "Час виконання вийшов"
     },
     {
         "name": "Laba 2 (Зробити ще щось там)",
@@ -21,7 +22,8 @@
         "video_link": "https://www.youtube.com/embed/9WjXGsymT5M",
         "git_link": "https://github.com/RomanMykolaichuk/wd2021/tree/LectionFetchAPI",
         "photo_link": "/assets/img/lab1.png",
-        "time": "2005, 5, 5"
+        "time": "2005, 5, 5",
+        "status": "Час виконання вийшов"
     },
     {
         "name": "Laba 3 (В 3 раз щось там зробити)",
@@ -32,7 +34,8 @@
         "video_link": "https://www.youtube.com/embed/9WjXGsymT5M",
         "git_link": "https://github.com/RomanMykolaichuk/wd2021/tree/LectionFetchAPI",
         "photo_link": "/assets/img/lab1.png",
-        "time": "2010, 10, 10"
+        "time": "2010, 10, 10",
+        "status": "Час виконання вийшов"
     },
     {
         "name": "Laba 4 (Короч, ще роби)",
@@ -43,7 +46,8 @@
         "video_link": "https://www.youtube.com/embed/9WjXGsymT5M",
         "git_link": "https://github.com/RomanMykolaichuk/wd2021/tree/LectionFetchAPI",
         "photo_link": "/assets/img/lab1.png",
-        "time": "2012, 12, 12"
+        "time": "2012, 12, 12",
+        "status": "Час виконання вийшов"
     },
     {
         "name": "Laba 5 (Зроби востаннє щось там)",
@@ -54,7 +58,8 @@
         "video_link": "https://www.youtube.com/embed/9WjXGsymT5M",
         "git_link": "https://github.com/RomanMykolaichuk/wd2021/tree/LectionFetchAPI",
         "photo_link": "/assets/img/lab1.png",
-        "time": "2022, 11, 30"
+        "time": "2022, 11, 30",
+        "status": "Ще можна здати"
     }
 ]
 }
