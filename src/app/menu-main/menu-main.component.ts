@@ -27,6 +27,10 @@ export class MenuMainComponent implements OnInit {
   
   labaList: Laba[]=[];
   ngOnInit(): void {
+    this.ToSubscribe();
+  }
+
+  public ToSubscribe() : void {
     this.service.count$.subscribe((count) => this.VstavkaDeadline());
     this.service.getLaba().subscribe(
     (labs)=>{
@@ -47,11 +51,7 @@ export class MenuMainComponent implements OnInit {
         this.nearest_deadline = this.labaList[i].time;
         this.ii$ = i + 1;
         break;
-      } 
+      }
     }
-    console.log(this.nearest_deadline);
-  } 
-  //next_laba.innerHTML = `<h2> Наступна лабораторна №${ii + 1} до ${nearest_deadline} </h2>`;
-  //
-
+  }
 }

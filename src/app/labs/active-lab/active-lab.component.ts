@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Subject } from 'rxjs';
 import { Laba } from 'src/app/interfaces/laba';
 import { MainLogicService } from 'src/app/services/main-logic.service';
 
@@ -10,22 +9,33 @@ import { MainLogicService } from 'src/app/services/main-logic.service';
   encapsulation: ViewEncapsulation.None
 })
 export class ActiveLabComponent implements OnInit {
+  this: any;
 
   constructor(private service:MainLogicService) { 
-    //dataNumberVstavkaID: this.service.getNumber();
   }
   labaList: Laba[]=[];
   ngOnInit(): void {
-    this.service.count$.subscribe((count) => this.VstavkaHTML(count));
-    this.service.getLaba().subscribe(
-    (labs)=>{
-      this.labaList = labs;
-    }
-    );
+    this.ToSubscribe();
+    //return this.this.service.mozhnaZdaty(this.dataNumberVstavkaID, this.labaList);
   }
   dataNumberVstavkaID:number = this.service.ID$;
 
-  mozhna="";
+  //mozhna = "Ще можна здати";
+  //public mozhna:string = this.service.mozhnaZdaty(this.dataNumberVstavkaID, this.ToSubscribe());
+  //mozhna = this.ngOnInit();
+
+  public ToSubscribe(): Laba[]{
+    this.service.count$.subscribe((count) => this.VstavkaHTML(count));
+    this.service.getLaba().subscribe(
+    (labs)=>{
+      console.log(labs);
+      this.labaList = labs;
+    }
+    );
+    return (this.labaList);
+  }
+
+  
   private VstavkaHTML(data: number): void{
     this.dataNumberVstavkaID=data;
     //Czhy mozhna zdaty
@@ -37,5 +47,7 @@ export class ActiveLabComponent implements OnInit {
     }
   
   }
+    mozhna: string = "Час роботи вийшов";
+    //mozhna:string = "TEST";
 
 }
