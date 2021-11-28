@@ -9,7 +9,7 @@
             <h1>{{labaList[dataNumberVstavkaID].status}}</h1>
         </div>
         <div class="flexel2" id="labdeadline">
-            <h1>{{labaList[dataNumberVstavkaID].to_time}}</h1>
+            <h1>До {{labaList[dataNumberVstavkaID].to_time}}</h1>
         </div>
     </div>
     <div class="differ smalldiffer"></div>
@@ -17,6 +17,7 @@
         <div class="flexel" id=labinfo>
             <h2>Опис роботи:</h2>
             {{labaList[dataNumberVstavkaID].info}}
+
             <ol>
               <li>{{labaList[dataNumberVstavkaID].info_steps[0]}}</li>
               <li>{{labaList[dataNumberVstavkaID].info_steps[1]}}</li>

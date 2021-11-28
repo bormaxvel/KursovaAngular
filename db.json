@@ -2,19 +2,19 @@
 {
     "data": [
     {
-        "name": "Laba 1 (Зробити щось там)",
-        "to_time": "01.01.2001",
-        "info": "Треба зробити 1 лабу! Опис:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi consequatur veniam voluptas nostrum? Beatae atque earum, vel, iure asperiores quas nesciunt eaque sed laboriosam enim, tempore quos debitis qui.",
-        "info_steps": ["zavdannya", "zavdannya", "zavdannya", "zavdannya" , "zavdannya"],
+        "name": "Lab №1 Знайомство з HTML",
+        "to_time": "25.09.2021",
+        "info": "Для виконання цієї лабораторної потрібно навчитися оформлювати відносні та абсолютні посилання на інші документи HTML(необхідно додатково створити), та на реально існуючі сайти Інтернету. Розробити перелік продуктів корзини у вигляди таблиці. Якщо виникають якісь складнощі можете переглянути відео гайд",
+        "info_steps": ["Відкрити створений на попередній роботі текст сторінки будь-яким редактором.", "Додайте таблицю, що містить перелік продуктів.", "Склад продуктов оформіть як посилання на інший документ (сторінку).", "Додайте посилання на реальний сайт Інтернету, наприклад, „Новини” або свої улюблені сайти." , "Періодично зберігаючи та оновлюючи сторінку, намагайтесь дотримуватися загального вигляду сторінки, зберігаючи раніше створений формат тексту,   зображення, тощо."],
         "download_link": "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=169E5pMeHAF68kMz8paAOMyCl9EAx4Dnx",
         "video_link": "https://www.youtube.com/embed/9WjXGsymT5M",
         "git_link": "https://github.com/RomanMykolaichuk/wd2021/tree/LectionFetchAPI",
-        "photo_link": "/assets/img/lab1.png",
+        "photo_link": "/assets/img/html.jpeg",
         "time": "2001, 1, 1",
         "status": "Час виконання вийшов"
     },
     {
-        "name": "Laba 2 (Зробити ще щось там)",
+        "name": "Lab №2 (Зробити ще щось там)",
         "to_time": "05.05.2005",
         "info": "Треба зробити 2 лабу! Опис:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi consequatur veniam voluptas nostrum? Beatae atque earum, vel, iure asperiores quas nesciunt eaque sed laboriosam enim, tempore quos debitis qui.",
         "info_steps": ["zavdannya", "zavdannya", "zavdannya", "zavdannya" , "zavdannya"],
@@ -26,7 +26,7 @@
         "status": "Час виконання вийшов"
     },
     {
-        "name": "Laba 3 (В 3 раз щось там зробити)",
+        "name": "Lab №3 (В 3 раз щось там зробити)",
         "to_time": "10.10.2010",
         "info": "Треба зробити 3 лабу! Опис:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi consequatur veniam voluptas nostrum? Beatae atque earum, vel, iure asperiores quas nesciunt eaque sed laboriosam enim, tempore quos debitis qui.",
         "info_steps": ["zavdannya", "zavdannya", "zavdannya", "zavdannya" , "zavdannya"],
@@ -38,7 +38,7 @@
         "status": "Час виконання вийшов"
     },
     {
-        "name": "Laba 4 (Короч, ще роби)",
+        "name": "Lab №4 (Короч, ще роби)",
         "to_time": "12.12.2012",
         "info": "Треба зробити 4 лабу! Опис:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi consequatur veniam voluptas nostrum? Beatae atque earum, vel, iure asperiores quas nesciunt eaque sed laboriosam enim, tempore quos debitis qui.",
         "info_steps": ["zavdannya", "zavdannya", "zavdannya", "zavdannya" , "zavdannya"],
@@ -50,7 +50,7 @@
         "status": "Час виконання вийшов"
     },
     {
-        "name": "Laba 5 (Зроби востаннє щось там)",
+        "name": "Lab №5 (Зроби востаннє щось там)",
         "to_time": "30.11.2022",
         "info": "Треба зробити 5 лабу! Опис:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sequi consequatur veniam voluptas nostrum? Beatae atque earum, vel, iure asperiores quas nesciunt eaque sed laboriosam enim, tempore quos debitis qui.",
         "info_steps": ["zavdannya", "zavdannya", "zavdannya", "zavdannya" , "zavdannya"],
