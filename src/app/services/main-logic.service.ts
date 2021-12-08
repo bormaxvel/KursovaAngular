@@ -13,9 +13,11 @@ export class MainLogicService {
   
   constructor(private http:HttpClient) { }
   
+  // Повертає список лаб з сервера
   getLaba():Observable<Laba[]>{
     return this.http.get<Laba[]>(this.url);
   }
+  
   //public count$ = new Subject<number>();
   //public count$: number;
 

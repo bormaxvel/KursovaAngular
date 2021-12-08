@@ -23,35 +23,43 @@ export class MenuMainComponent implements OnInit {
       this.ifactive1 = "";
     }
     
+    
   }
   
   labaList: Laba[]=[];
   ngOnInit(): void {
     this.ToSubscribe();
   }
+  
 
   public ToSubscribe() : void {
-    this.service.count$.subscribe((count) => this.VstavkaDeadline());
+    // this.service.count$.subscribe((count) => this.VstavkaDeadline());
     this.service.getLaba().subscribe(
     (labs)=>{
       this.labaList = labs;
+      this.VstavkaDeadline();
+
+      
     }
     );
+    
   }
 
   // Vstavyty Deadline
   
   // mozhna_zdaty = [0, 0, 0, 0, 0];
-  public ii$:number = 5;
-  public nearest_deadline: Date = new Date(2022, 11, 30);
-
+  public ii$:number = NaN;
+  public nearest_deadline: Date = new Date;
   public VstavkaDeadline(){
     for (var i = 0; i < this.labaList.length; i++){
       if(new Date(this.labaList[i].time) > new Date()){
-        this.nearest_deadline = this.labaList[i].time;
+        this.nearest_deadline = new Date(this.labaList[i].time);
         this.ii$ = i + 1;
+        console.log(new Date);
         break;
       }
+
     }
   }
+
 }
